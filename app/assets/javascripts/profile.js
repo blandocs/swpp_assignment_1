@@ -1,23 +1,26 @@
-var button = document.getElementById("signup_button");
-button.onclick=function();
+window.onload = init;
 
-function() {
+var button = document.getElementById(signup_button);
 
+button.onclick -> function('/signup');
+function(new_url){
 $.ajax({
-	url: "<%= @signup_path %>".
+	url: new_url,
 	type: "POST",
 	dataType: "json"
-	data: {user_name: document.getElementById("my_id")},
-	complete: function(){},
-	success: function(data, textStatus, xhr){},
+	data:  {username: document.getElementById("my_id"),
+		password: document.getElementById("my_password"),
+		count: 1},
+	complete: function(alert "sdf"){},
+	success: function(data){alert "success"   },
 	error: function(){alert "ajax error!"}
-	}
+	});
 
 
 
 
 
-};
+});
 
 
 

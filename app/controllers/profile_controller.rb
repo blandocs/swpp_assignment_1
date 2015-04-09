@@ -1,12 +1,12 @@
 class ProfileController < ApplicationController
   def index
-  @name = params[:user_name]
-  
-  if(@name <1)
-	  @check= 0
-  end
 
- 
+  @username = params[:username]
+  @password = params[:password]
+  respond_to do |format|
+	format.json {render json: {:error_code => -1}}
 
+
+	end
   end
 end
