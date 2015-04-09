@@ -3,7 +3,9 @@ class CreateProfiles < ActiveRecord::Migration
     create_table :profiles do |t|
       t.string :username, :null =>false
      
-	t.string :password
+      t.string :password
+
+      t.int :count     
 
       t.timestamps null: false
     end
