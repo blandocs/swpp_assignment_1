@@ -1,5 +1,5 @@
 function a() {
-ajax({
+$.ajax({
         url: '/signup',
         type: "POST",
         dataType: "json",

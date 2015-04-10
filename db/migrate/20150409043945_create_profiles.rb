@@ -5,7 +5,7 @@ class CreateProfiles < ActiveRecord::Migration
      
       t.string :password
 
-      t.int :count     
+      t.integer :count     
 
       t.timestamps null: false
     end
